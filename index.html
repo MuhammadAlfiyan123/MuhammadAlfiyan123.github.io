@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Peersonal Web</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--loader-->
+    <div class="bg-loader">
+        <div class="loader">
+
+        </div>
+    </div>
+    <!--Header-->
+    <div class="medsos">
+        <div class="container">
+            <ul>
+                <li><a href="https://www.facebook.com/profile.php?id=100088155259679&mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com/mhmmdalfyan_?igsh=MTJhczJnNWtybTFldA=="><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://www.youtube.com/@user-pn1vr8xf2y"><i class="fa-brands fa-youtube"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <header>
+        <div class="container">
+        <h1><a href="index.html">ALFIYAN</a></h1>
+        <ul>
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="service.html">Experience</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+    </header>
+   <!--banner-->
+        <section class="banner">
+          <h2>Welcome to My WEBSITE</h2>
+        </section>
+    <!--about-->
+    <section class="about">
+        <div class="container">
+            <h3>About</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <strong>Voluptate pariatur consequuntur, rem, magni porro officia ad dolorem est consequatur quod esse,</strong> nam placeat ipsa repellendus vero quam alias commodi eum adipisci corporis debitis nisi amet? Mollitia fuga iste omnis voluptates sapiente! Aperiam molestiae id, nihil harum, dolore velit a rerum optio libero eius sunt, repellat odit officia adipisci illum cumque molestias enim? Praesentium omnis maiores atque, voluptatum est qui nihil?</p>
+        </div>
+    </section>
+    <!--service-->
+    <section class="service">
+        <div class="container">
+            <h3>EXPERIENCE</h3>
+            <div class="box">
+                <div class="col-4">
+                    <div class="icon"><i class="fa-solid fa-mobile"></i></div>
+                    <h4>Mobile App</h4>
+                </div>
+                <div class="col-4">
+                    <div class="icon"><i class="fa-solid fa-laptop-code"></i></div>
+                    <h4>Web Development</h4>
+                </div>
+                <div class="col-4">
+                    <div class="icon"><i class="fa-solid fa-tachograph-digital"></i></div>
+                    <h4>Digital Marketing</h4>
+                </div>
+                <div class="col-4">
+                    <div class="icon"><i class="fa-solid fa-fingerprint"></i></div>
+                    <h4>Cyber Security</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Galery-->
+    <section class="">
+      <div class="">
+          <h3>My Galleries</h3>
+    <div class="galeri">
+      <img src="images/gambar1.jpg" class="preview-img" id="preview-img" alt="gambar1">
+
+      <div class="galleries">
+        <img src="images/gambar1.jpg" onclick="imgpreview(this.src)" alt="">
+        <img src="images/gambar2.jpg" onclick="imgpreview(this.src)" alt="">
+        <img src="images/gambar3.jpg" onclick="imgpreview(this.src)" alt="">
+        <img src="images/gambar4.jpg" onclick="imgpreview(this.src)" alt="">
+        <img src="images/gambar5.jpg" onclick="imgpreview(this.src)" alt="">
+      </div>
+    </div>
+    <script>
+      const imgpreview = (src) => {
+        document.getElementById('preview-img').src = src
+      }
+    </script>
+    <!--footer-->
+    <footer>
+        <div class="container">
+            <small>Copyright &copy; 2024 - Muhammad Alfiyan Kamaluddin. All Right Reserverd.</small>
+        </div>
+    </footer>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(".bg-loader").hide();
+        })
+    </script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
